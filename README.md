@@ -1,41 +1,45 @@
-🛫 Costa Rica Flight Prediction Pipeline
-An end-to-end Data Engineering and Machine Learning pipeline built entirely on Databricks. This project orchestrates the collection of historical flight data, real-time scheduled flights in Costa Rica, and uses Machine Learning to predict arrival and departure delays.
+# 🛫 Costa Rica Flight Prediction Pipeline
 
-🔗 Live Project Dashboard
-https://dixonjafet.github.io/Flight_Dashboard_DataBricks/
+An end-to-end **Data Engineering and Machine Learning pipeline** built entirely on Databricks.  
+This project orchestrates the collection of historical flight data, real-time scheduled flights in Costa Rica, and uses Machine Learning to predict arrival and departure delays.
+This project automates the lifecycle of flight data—from ingestion to prediction. By monitoring flight patterns in Costa Rican airports (such as SJO and LIR), the system provides an estimated time of arrival/departure that accounts for real-world delays, visualized in a custom web dashboard.
+---
 
+## 🔗 Live Project Dashboard
 
+[*DataBricks_Dashboard*](https://dixonjafet.github.io/Flight_Dashboard_DataBricks/)
 
-🛠️ Tech Stack
--Platform: Databricks (Cloud Version)
+---
+## 🛠️ Tech Stack
+- **Platform:** Databricks (Cloud Version)  
+- **Orchestration:** Databricks Workflows (Jobs & Pipelines)  
+- **Languages:** Python (PySpark / Pandas), SQL  
+- **Storage:** Delta Lake  
+- **Compute:** Serverless Starter Warehouse / Standard Clusters  
+- **Visualization:** GitHub Pages (Custom Dashboard)  
+---
 
--Orchestration: Databricks Workflows (Jobs & Pipelines)
+## ⚙️ Pipeline Architecture
 
--Languages: Python (PySpark/Pandas), SQL
+The pipeline (`Flight_Pipeline`) consists of **five main stages**:
 
--Storage: Delta Lake
+### 1️⃣ Get_Airports_Codes
+Fetches and updates the reference data for international and local airport codes relevant to the Costa Rican flight paths.
 
--Compute: Serverless Starter Warehouse / Standard Clusters
+### 2️⃣ Get_ended_flights
+Ingests historical data of completed flights. This serves as the **"Ground Truth"** for training predictive models.
 
--Visualization: GitHub Pages (Custom Dashboard)
+### 3️⃣ reset_today_flightsDB
+A maintenance task that: Cleans daily operational tables, Resets current-day data,Prevents duplicates in the dashboard  
 
+### 4️⃣ Today_Scheduled_flights_query
+Pulls real-time API/Source data for flights scheduled for the current date.
 
-⚙️ Pipeline Architecture
-The pipeline (Flight_Pipeline) consists of five main stages:
+### 5️⃣ train_estimated_time_model
+The **Machine Learning component**: Processes historical patterns trains/applies a predictive model,Predicts `estimated_time` for currently scheduled flights  
 
-Get_Airports_Codes: Fetches and updates the reference data for international and local airport codes relevant to the Costa Rican flight paths.
-
-Get_ended_flights: Ingests historical data of completed flights. This serves as the "Ground Truth" for training our predictive models.
-
-reset_today_flightsDB: A maintenance task that cleans and resets the daily operational tables to ensure the dashboard reflects current-day data without duplicates.
-
-Today_Scheduled_flights_query: Pulls real-time API/Source data for flights scheduled for the current date.
-
-train_estimated_time_model: The ML component. It processes historical patterns to train/apply a model that predicts the estimated_time for the currently scheduled flights.
-
-📊 Dashboard & Predictions
+---
+## 📊 Dashboard & Predictions
 The output of this pipeline is consumed by a front-end dashboard where users can compare:
-
-Scheduled Time: The official time provided by airlines.
-
-Predicted Time: The ML-calculated time based on historical delay trends and current flight status.
+**Scheduled Time:** vs **Predicted Time:** 
+---
