@@ -3,13 +3,6 @@
 An end-to-end Data Engineering and Machine Learning pipeline built entirely on Databricks.  
 This project orchestrates the collection of historical flight data, real-time scheduled flights in Costa Rica, and uses Machine Learning to predict arrival and departure delays.
 This project automates the lifecycle of flight data—from ingestion to prediction. By monitoring flight patterns in Costa Rican airports (such as SJO and LIR), the system provides an estimated time of arrival/departure that accounts for real-world delays, visualized in a custom web dashboard.
-
----
-
-## 🔗 Live Project Dashboard
-
-[*DataBricks_Dashboard*](https://dixonjafet.github.io/Flight_Dashboard_DataBricks/)
-
 ---
 ## 🛠️ Tech Stack
 - **Platform:** Databricks (Cloud Version)  
@@ -44,3 +37,5 @@ The **Machine Learning component**: Processes historical patterns trains/applies
 The output of this pipeline is consumed by a front-end dashboard where users can compare:
 **Scheduled Time:** vs **Predicted Time:** 
 ---
+## 🔗 Live Project Dashboard
+[*DataBricks_Dashboard*](https://dixonjafet.github.io/Flight_Dashboard_DataBricks/)
