@@ -1,8 +1,9 @@
 ## 🛫 Costa Rica Flight Prediction Pipeline
 
-An end-to-end Data Engineering and Machine Learning pipeline built entirely on Databricks.  
+-An end-to-end Data Engineering and Machine Learning pipeline built entirely on Databricks.  
 This project orchestrates the collection of historical flight data, real-time scheduled flights in Costa Rica, and uses Machine Learning to predict arrival and departure delays.
-This project automates the lifecycle of flight data—from ingestion to prediction. By monitoring flight patterns in Costa Rican airports (such as SJO and LIR), the system provides an estimated time of arrival/departure that accounts for real-world delays, visualized in a custom web dashboard.
+
+-This project automates the lifecycle of flight data—from ingestion to prediction. By monitoring flight patterns in Costa Rican airports (such as SJO and LIR), the system provides an estimated time of arrival/departure that accounts for real-world delays, visualized in a custom web dashboard.
 ---
 ## 🛠️ Tech Stack
 - **Platform:** Databricks (Cloud Version)  
