@@ -10,8 +10,7 @@ This project orchestrates the collection of historical flight data, real-time sc
 - **Languages:** Python (PySpark / Pandas), SQL  
 - **Storage:** Delta Lake  
 - **Compute:** Serverless Starter Warehouse / Standard Clusters  
-- **Visualization:** GitHub Pages (Custom Dashboard)  
----
+- **Visualization:** GitHub Pages (Custom Dashboard)
 
 ---
 ## 📊 Dashboard & Predictions
@@ -23,11 +22,8 @@ The output of this pipeline is consumed by a front-end dashboard where users can
 [*DataBricks_Dashboard*](https://dixonjafet.github.io/Flight_Dashboard_DataBricks/)
 
 ---
-
 ## ⚙️ Pipeline Architecture
-
 ![Dashboard Preview](PipeLineJobs.png)
-
 The pipeline (`Flight_Pipeline`) consists of **five main stages**:
 
 ### 1️⃣ Get_Airports_Codes
@@ -44,5 +40,3 @@ Pulls real-time API/Source data for flights scheduled for the current date.
 
 ### 5️⃣ train_estimated_time_model
 The **Machine Learning component**: Processes historical patterns trains/applies a predictive model,Predicts `estimated_time` for currently scheduled flights  
-
-
