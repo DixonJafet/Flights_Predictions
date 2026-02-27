@@ -17,6 +17,8 @@ This project orchestrates the collection of historical flight data, real-time sc
 
 ## ⚙️ Pipeline Architecture
 
+![Dashboard Preview](PipeLineJobs.png)
+
 The pipeline (`Flight_Pipeline`) consists of **five main stages**:
 
 ### 1️⃣ Get_Airports_Codes
