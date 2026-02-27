@@ -13,6 +13,17 @@ This project orchestrates the collection of historical flight data, real-time sc
 - **Visualization:** GitHub Pages (Custom Dashboard)  
 ---
 
+---
+## 📊 Dashboard & Predictions
+The output of this pipeline is consumed by a front-end dashboard where users can compare:
+**Scheduled Time:** vs **Predicted Time:** 
+
+---
+## 🔗 Live Project Dashboard
+[*DataBricks_Dashboard*](https://dixonjafet.github.io/Flight_Dashboard_DataBricks/)
+
+---
+
 ## ⚙️ Pipeline Architecture
 
 ![Dashboard Preview](PipeLineJobs.png)
@@ -34,10 +45,4 @@ Pulls real-time API/Source data for flights scheduled for the current date.
 ### 5️⃣ train_estimated_time_model
 The **Machine Learning component**: Processes historical patterns trains/applies a predictive model,Predicts `estimated_time` for currently scheduled flights  
 
----
-## 📊 Dashboard & Predictions
-The output of this pipeline is consumed by a front-end dashboard where users can compare:
-**Scheduled Time:** vs **Predicted Time:** 
----
-## 🔗 Live Project Dashboard
-[*DataBricks_Dashboard*](https://dixonjafet.github.io/Flight_Dashboard_DataBricks/)
+
