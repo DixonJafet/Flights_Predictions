@@ -19,7 +19,7 @@ The output of this pipeline is consumed by a front-end dashboard where users can
 
 ---
 ## 🔗 Live Project Dashboard
-[*DataBricks_Dashboard*](https://dixonjafet.github.io/Flight_Dashboard_DataBricks/)
+[*DataBricks_Dashboard*](https://app.powerbi.com/view?r=eyJrIjoiNTliODAzODEtOTJhYS00ZmIyLTg0ODAtMWYzYTRlNDM4MWE0IiwidCI6IjRhYmVmM2RjLWU2OTItNGRjOC05MmViLTkxNGExZjdjMmIyMSIsImMiOjZ9)
 
 ---
 ## ⚙️ Pipeline Architecture
