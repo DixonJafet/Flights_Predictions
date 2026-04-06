@@ -7,10 +7,10 @@ This project orchestrates the collection of historical flight data, real-time sc
 ## 🛠️ Tech Stack
 - **Platform:** Databricks (Cloud Version)  
 - **Orchestration:** Databricks Workflows (Jobs & Pipelines)  
-- **Languages:** Python (PySpark / Pandas), SQL  
+- **Languages:** Python (PySpark), SQL  
 - **Storage:** Delta Lake  
 - **Compute:** Serverless Starter Warehouse / Standard Clusters  
-- **Visualization:** GitHub Pages (Custom Dashboard)
+- **Visualization:** PowerBI Dashboard
 
 ---
 ## 📊 Dashboard & Predictions
